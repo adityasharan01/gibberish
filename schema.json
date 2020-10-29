@@ -1,0 +1,775 @@
+{
+	"$id": "#/definitions/tafbTxnFeeDtl",
+	"title": "Transaction Fee Details",
+	"description": "Details about Transaction Fee Details",
+	"type": "object",
+	"required": [
+		"tafbTxnFeeDtl"
+	],
+	"properties": {
+		"tafbTxnFeeDtl": {
+			"$id": "#/definitions/tafbTxnFeeDtl",
+			"title": "tafbTxnFeeDtl",
+			"description": "Details about Transaction Fee",
+			"type": "object",
+			"required": [
+				"feeRefNo",
+				"txnRfn",
+				"custId",
+				"feeId",
+				"feeName",
+				"freqId",
+				"adhocFeeFlag",
+				"ccyCde",
+				"amt",
+				"feeStat",
+				"feeType",
+				"calcDt",
+				"settlementDt",
+				"custCatName",
+				"prodTypeDesc",
+				"prodType",
+				"crtTmstmp",
+				"status",
+				"drCrStatus",
+				"interfaceStatus",
+				"reqType",
+				"apprvStat",
+				"custName",
+				"txnDt",
+				"recStat",
+				"lobId",
+				"lobName",
+				"txnCurrency",
+				"branchCode",
+				"billBranch",
+				"taxAmount",
+				"feeAmtAfterTax"
+			],
+			"properties": {
+				"feeRefNo": {
+					"$id": "#/definitions/tafbTxnFeeDtl/feeRefNo",
+					"type": "integer",
+					"title": "feeRefNo",
+					"description": "Fee Reference Number"
+				},
+				"txnRfn": {
+					"$id": "#/definitions/tafbTxnFeeDtl/txnRfn",
+					"type": "string",
+					"title": "txnRfn",
+					"description": "Transaction Reference",
+					"maxLength": 100
+				},
+				"custId": {
+					"$id": "#/definitions/tafbTxnFeeDtl/custId",
+					"type": "integer",
+					"title": "custId",
+					"description": "Customer ID"
+				},
+				"feeId": {
+					"$id": "#/definitions/tafbTxnFeeDtl/feeId",
+					"type": "integer",
+					"title": "feeId",
+					"description": "Fee ID"
+				},
+				"feeName": {
+					"$id": "#/definitions/tafbTxnFeeDtl/feeName",
+					"type": "string",
+					"title": "feeName",
+					"description": "Fee Name",
+					"maxLength": 100
+				},
+				"freqId": {
+					"$id": "#/definitions/tafbTxnFeeDtl/freqId",
+					"type": "integer",
+					"title": "freqId",
+					"description": "Frequency ID"
+
+				},
+				"adhocFeeFlag": {
+					"$id": "#/definitions/tafbTxnFeeDtl/adhocFeeFlag",
+					"type": "string",
+					"title": "adhocFeeFlag",
+					"description": "Indicates whether the fee is adhoc",
+					"enum": ["N", "Y"]
+				},
+				"ccyCde": {
+					"$id": "#/definitions/tafbTxnFeeDtl/ccyCde",
+					"type": "string",
+					"title": "ccyCde",
+					"description": "Currency code",
+					"maxLength": 20
+				},
+				"amt": {
+					"$id": "#/definitions/tafbTxnFeeDtl/amt",
+					"type": "number",
+					"title": "amt",
+					"description": "Fee Amount"
+				},
+				"feeStat": {
+					"$id": "#/definitions/tafbTxnFeeDtl/feeStat",
+					"type": "string",
+					"title": "feeStat",
+					"description": "Fee status",
+					"maxLength": 48
+				},
+				"feeType": {
+					"$id": "#/definitions/tafbTxnFeeDtl/feeType",
+					"type": "string",
+					"title": "feeType",
+					"description": "Fee Type",
+					"maxLength": 100
+				},
+				"calcDt": {
+					"$id": "#/definitions/tafbTxnFeeDtl/calcDt",
+					"type": "string",
+					"title": "calcDt",
+					"description": "Calculation Date",
+					"format": "date-time"
+				},
+				"settlementDt": {
+					"$id": "#/definitions/tafbTxnFeeDtl/settlementDt",
+					"type": "string",
+					"title": "settlementDt",
+					"description": "Settlement Date",
+					"format": "date-time"
+				},
+				"custCatName": {
+					"$id": "#/definitions/tafbTxnFeeDtl/custCatName",
+					"type": "string",
+					"title": "custCatName",
+					"description": "Customer Category Name",
+					"maxLength": 100
+				},
+				"prodTypeDesc": {
+					"$id": "#/definitions/tafbTxnFeeDtl/prodTypeDesc",
+					"type": "string",
+					"title": "prodTypeDesc",
+					"description": "Product Type description",
+					"maxLength": 255
+				},
+				"prodType": {
+					"$id": "#/definitions/tafbTxnFeeDtl/prodType",
+					"type": "string",
+					"title": "prodType",
+					"description": "Product Type",
+					"maxLength": 255
+				},
+				"crtTmstmp": {
+					"$id": "#/definitions/tafbTxnFeeDtl/crtTmstmp",
+					"type": "string",
+					"title": "crtTmstmp",
+					"description": "Created timestamp",
+					"format": "date-time"
+				},
+				"status": {
+					"$id": "#/definitions/tafbTxnFeeDtl/status",
+					"type": "string",
+					"title": "status",
+					"description": "Status",
+					"maxLength": 50
+				},
+				"drCrStatus": {
+					"$id": "#/definitions/tafbTxnFeeDtl/drCrStatus",
+					"type": "string",
+					"title": "drCrStatus",
+					"description": "Debit/Credit status",
+					"enum": ["d", "c"]
+				},
+				"interfaceStatus": {
+					"$id": "#/definitions/tafbTxnFeeDtl/interfaceStatus",
+					"type": "string",
+					"title": "interfaceStatus",
+					"description": "Interface status",
+					"maxLength": 24
+				},
+				"reqType": {
+					"$id": "#/definitions/tafbTxnFeeDtl/reqType",
+					"type": "string",
+					"title": "reqType",
+					"description": "Request Type",
+					"maxLength": 24
+				},
+				"apprvStat": {
+					"$id": "#/definitions/tafbTxnFeeDtl/apprvStat",
+					"type": "string",
+					"title": "apprvStat",
+					"description": "Approved status",
+					"maxLength": 24
+				},
+				"custName": {
+					"$id": "#/definitions/tafbTxnFeeDtl/custName",
+					"type": "string",
+					"title": "custName",
+					"description": "Customer name",
+					"maxLength": 48
+				},
+				"txnDt": {
+					"$id": "#/definitions/tafbTxnFeeDtl/txnDt",
+					"type": "string",
+					"title": "txnDt",
+					"description": "Transaction Date",
+					"format": "date-time"
+				},
+				"recStat": {
+					"$id": "#/definitions/tafbTxnFeeDtl/recStat",
+					"type": "string",
+					"title": "recStat",
+					"description": "Record status",
+					"enum": ["Adjust", "Reversal", "New"]
+				},
+				"lobId": {
+					"$id": "#/definitions/tafbTxnFeeDtl/lobId",
+					"type": "integer",
+					"title": "lobId",
+					"description": "Line of business ID"
+				},
+				"lobName": {
+					"$id": "#/definitions/tafbTxnFeeDtl/lobName",
+					"type": "string",
+					"title": "lobName",
+					"description": "Line of business name",
+					"maxLength": 48
+				},
+				"txnCurrency": {
+					"$id": "#/definitions/tafbTxnFeeDtl/txnCurrency",
+					"type": "string",
+					"title": "txnCurrency",
+					"description": "Transaction Currency",
+					"maxLength": 3
+				},
+				"branchCode": {
+					"$id": "#/definitions/tafbTxnFeeDtl/branchCode",
+					"type": "string",
+					"title": "branchCode",
+					"description": "Branch code",
+					"maxLength": 50
+				},
+				"billBranch": {
+					"$id": "#/definitions/tafbTxnFeeDtl/billBranch",
+					"type": "string",
+					"title": "billBranch",
+					"description": "Billing branch",
+					"maxLength": 50
+				},
+				"taxAmount": {
+					"$id": "#/definitions/tafbTxnFeeDtl/taxAmount",
+					"type": "number",
+					"title": "taxAmount",
+					"description": "Tax Amount"
+				},
+				"feeAmtAfterTax": {
+					"$id": "#/definitions/tafbTxnFeeDtl/feeAmtAfterTax",
+					"type": "number",
+					"title": "feeAmtAfterTax",
+					"description": "Fee amount after tax"
+				},
+				"version": {
+					"$id": "#/definitions/tafbTxnFeeDtl/version",
+					"type": "number",
+					"title": "version",
+					"description": "version"
+				},
+				"fetchStatus": {
+					"$id": "#/definitions/tafbTxnFeeDtl/fetchStatus",
+					"type": "string",
+					"title": "fetchStatus",
+					"description": "fetchStatus",
+					"maxLength": 20
+				},
+				"countryName": {
+					"$id": "#/definitions/tafbTxnFeeDtl/countryName",
+					"type": "string",
+					"title": "countryName",
+					"description": "Country name",
+					"maxLength": 50
+				},
+				"countryId": {
+					"$id": "#/definitions/tafbTxnFeeDtl/countryId",
+					"type": "integer",
+					"title": "countryId",
+					"description": "Country ID"
+				},
+				"assoRefNo": {
+					"$id": "#/definitions/tafbTxnFeeDtl/assoRefNo",
+					"type": "integer",
+					"title": "assoRefNo",
+					"description": "assoRefNo"
+				},
+				"freqName": {
+					"$id": "#/definitions/tafbTxnFeeDtl/freqName",
+					"type": "string",
+					"title": "freqName",
+					"description": "Frequency name",
+					"maxLength": 16
+				},
+				"custCatId": {
+					"$id": "#/definitions/tafbTxnFeeDtl/custCatId",
+					"type": "string",
+					"title": "custCatId",
+					"description": "Customer category ID",
+					"maxLength": 100
+				},
+				"groupId": {
+					"$id": "#/definitions/tafbTxnFeeDtl/groupId",
+					"type": "string",
+					"title": "groupId",
+					"description": "Customer Group ID",
+					"maxLength": 100
+				},
+				"spId": {
+					"$id": "#/definitions/tafbTxnFeeDtl/spId",
+					"type": "integer",
+					"title": "spId",
+					"description": "Pricing Plan ID"
+				},
+				"cpId": {
+					"$id": "#/definitions/tafbTxnFeeDtl/cpId",
+					"type": "integer",
+					"title": "cpId",
+					"description": "Charge profile ID"
+				},
+				"cpName": {
+					"$id": "#/definitions/tafbTxnFeeDtl/cpName",
+					"type": "string",
+					"title": "cpName",
+					"description": "Charge profile name",
+					"maxLength": 100
+				},
+				"prodSubTypeId": {
+					"$id": "#/definitions/tafbTxnFeeDtl/prodSubTypeId",
+					"type": "string",
+					"title": "prodSubTypeId",
+					"description": "Product subtype ID",
+					"maxLength": 255
+				},
+				"spName": {
+					"$id": "#/definitions/tafbTxnFeeDtl/spName",
+					"type": "string",
+					"title": "spName",
+					"description": "Pricing Plan Name",
+					"maxLength": 100
+				},
+				"billOption": {
+					"$id": "#/definitions/tafbTxnFeeDtl/billOption",
+					"type": "string",
+					"title": "billOption",
+					"description": "Billling option",
+					"maxLength": 16
+				},
+				"crtBy": {
+					"$id": "#/definitions/tafbTxnFeeDtl/crtBy",
+					"type": "string",
+					"title": "crtBy",
+					"description": "Created by",
+					"maxLength": 100
+				},
+				"adhocFeeBasis": {
+					"$id": "#/definitions/tafbTxnFeeDtl/adhocFeeBasis",
+					"type": "string",
+					"title": "adhocFeeBasis",
+					"description": "Adhoc fee basis",
+					"maxLength": 24
+				},
+				"adhocFeeType": {
+					"$id": "#/definitions/tafbTxnFeeDtl/adhocFeeType",
+					"type": "string",
+					"title": "adhocFeeType",
+					"description": "Adhoc fee type",
+					"maxLength": 24
+				},
+				"updBy": {
+					"$id": "#/definitions/tafbTxnFeeDtl/updBy",
+					"type": "string",
+					"title": "updBy",
+					"description": "Updated by",
+					"maxLength": 100
+				},
+				"updTmstmp": {
+					"$id": "#/definitions/tafbTxnFeeDtl/updTmstmp",
+					"type": "string",
+					"title": "updTmstmp",
+					"description": "Updated timestamp",
+					"format": "date-time"
+				},
+				"apprdBy": {
+					"$id": "#/definitions/tafbTxnFeeDtl/apprdBy",
+					"type": "string",
+					"title": "apprdBy",
+					"description": "Approved by (username)",
+					"maxLength": 24
+				},
+				"apprvTmstmp": {
+					"$id": "#/definitions/tafbTxnFeeDtl/apprvTmstmp",
+					"type": "string",
+					"title": "apprvTmstmp",
+					"description": "Aprroved timestamp",
+					"format": "date-time"
+				},
+				"reasonCode": {
+					"$id": "#/definitions/tafbTxnFeeDtl/reasonCode",
+					"type": "string",
+					"title": "reasonCode",
+					"description": "Reason code",
+					"maxLength": 24
+				},
+				"comments": {
+					"$id": "#/definitions/tafbTxnFeeDtl/comments",
+					"type": "string",
+					"title": "comments",
+					"description": "Captures the comments when the record was rejected while approving",
+					"maxLength": 255
+				},
+				"prodSubTypeDesc": {
+					"$id": "#/definitions/tafbTxnFeeDtl/prodSubTypeDesc",
+					"type": "string",
+					"title": "prodSubTypeDesc",
+					"description": "Product subtype description",
+					"maxLength": 255
+				},
+				"isActive": {
+					"$id": "#/definitions/tafbTxnFeeDtl/isActive",
+					"type": "string",
+					"title": "isActive",
+					"description": "Indicates whether the fee is active",
+					"enum": ["N", "Y"]
+				},
+				"billStrtDt": {
+					"$id": "#/definitions/tafbTxnFeeDtl/billStrtDt",
+					"type": "string",
+					"title": "billStrtDt",
+					"description": "Billing start date",
+					"format": "date"
+				},
+				"chargeDate": {
+					"$id": "#/definitions/tafbTxnFeeDtl/chargeDate",
+					"type": "string",
+					"title": "chargeDate",
+					"description": "Charge date",
+					"format": "date"
+				},
+				"parentGroupCode": {
+					"$id": "#/definitions/tafbTxnFeeDtl/parentGroupCode",
+					"type": "string",
+					"title": "parentGroupCode",
+					"description": "Parent group code",
+					"maxLength": 20
+				},
+				"customerRm": {
+					"$id": "#/definitions/tafbTxnFeeDtl/customerRm",
+					"type": "string",
+					"title": "customerRm",
+					"description": "Customer Relationship Manager",
+					"maxLength": 24
+				},
+				"custGroupRm": {
+					"$id": "#/definitions/tafbTxnFeeDtl/custGroupRm",
+					"type": "string",
+					"title": "custGroupRm",
+					"description": "Customer Group Relationship Manager",
+					"maxLength": 24
+				},
+				"parentGroupRm": {
+					"$id": "#/definitions/tafbTxnFeeDtl/parentGroupRm",
+					"type": "string",
+					"title": "parentGroupRm",
+					"description": "Parent group relationship manager",
+					"maxLength": 24
+				},
+				"groupName": {
+					"$id": "#/definitions/tafbTxnFeeDtl/groupName",
+					"type": "string",
+					"title": "groupName",
+					"description": "Customer Group Name",
+					"maxLength": 50
+				},
+				"chargeParty": {
+					"$id": "#/definitions/tafbTxnFeeDtl/chargeParty",
+					"type": "string",
+					"title": "chargeParty",
+					"description": "Charge party",
+					"maxLength": 255
+				},
+				"currencyAmountStatus": {
+					"$id": "#/definitions/tafbTxnFeeDtl/currencyAmountStatus",
+					"type": "string",
+					"title": "currencyAmountStatus",
+					"description": "currencyAmountStatus",
+					"maxLength": 1
+				},
+				"accClosure": {
+					"$id": "#/definitions/tafbTxnFeeDtl/accClosure",
+					"type": "string",
+					"title": "accClosure",
+					"description": "Account closure indicator",
+					"enum": ["N", "Y"]
+				},
+				"settlementId": {
+					"$id": "#/definitions/tafbTxnFeeDtl/settlementId",
+					"type": "string",
+					"title": "settlementId",
+					"description": "Settlement ID",
+					"maxLength": 26
+				},
+				"invoicedate": {
+					"$id": "#/definitions/tafbTxnFeeDtl/invoicedate",
+					"type": "string",
+					"title": "invoicedate",
+					"description": "Invoice date",
+					"format": "date-time"
+				},
+				"taxCurrency": {
+					"$id": "#/definitions/tafbTxnFeeDtl/taxCurrency",
+					"type": "string",
+					"title": "taxCurrency",
+					"description": "Tax Currency",
+					"maxLength": 3
+				},
+				"optimizedAmt": {
+					"$id": "#/definitions/tafbTxnFeeDtl/optimizedAmt",
+					"type": "number",
+					"title": "optimizedAmt",
+					"description": "Optimized amount"
+				},
+				"optimizedFeeBeforeTax": {
+					"$id": "#/definitions/tafbTxnFeeDtl/optimizedFeeBeforeTax",
+					"type": "number",
+					"title": "optimizedFeeBeforeTax",
+					"description": "Optimized fee before tax"
+				},
+				"optimizedFeeAfterTax": {
+					"$id": "#/definitions/tafbTxnFeeDtl/optimizedFeeAfterTax",
+					"type": "number",
+					"title": "optimizedFeeAfterTax",
+					"description": "Optimized fee after tax"
+				},
+				"optimizationStatus": {
+					"$id": "#/definitions/tafbTxnFeeDtl/optimizationStatus",
+					"type": "string",
+					"title": "optimizationStatus",
+					"description": "Optimization status",
+					"maxLength": 16
+				},
+				"optimizationDate": {
+					"$id": "#/definitions/tafbTxnFeeDtl/optimizationDate",
+					"type": "string",
+					"title": "optimizationDate",
+					"description": "Optimization date",
+					"format": "date-time"
+				},
+				"optimizationPlanName": {
+					"$id": "#/definitions/tafbTxnFeeDtl/optimizationPlanName",
+					"type": "string",
+					"title": "optimizationPlanName",
+					"description": "Optimization plan name",
+					"maxLength": 80
+				},
+				"creditAllow": {
+					"$id": "#/definitions/tafbTxnFeeDtl/creditAllow",
+					"type": "string",
+					"title": "creditAllow",
+					"description": "creditAllow",
+					"maxLength": 5
+				},
+				"noOfTxns": {
+					"$id": "#/definitions/tafbTxnFeeDtl/noOfTxns",
+					"type": "integer",
+					"title": "noOfTxns",
+					"description": "Number of transactions"
+				},
+				"errorDescription": {
+					"$id": "#/definitions/tafbTxnFeeDtl/errorDescription",
+					"type": "string",
+					"title": "errorDescription",
+					"description": "Error description",
+					"maxLength": 100
+				},
+				"parentGroupName": {
+					"$id": "#/definitions/tafbTxnFeeDtl/parentGroupName",
+					"type": "string",
+					"title": "parentGroupName",
+					"description": "Parent group name",
+					"maxLength": 100
+				},
+				"feealgosdtlsused": {
+					"$id": "#/definitions/tafbTxnFeeDtl/feealgosdtlsused",
+					"type": "string",
+					"title": "feealgosdtlsused",
+					"description": "Fee algo details",
+					"maxLength": 255
+				},
+				"feealgosused": {
+					"$id": "#/definitions/tafbTxnFeeDtl/feealgosused",
+					"type": "string",
+					"title": "feealgosused",
+					"description": "Fee algo used",
+					"maxLength": 255
+				},
+				"recalculatedFlag": {
+					"$id": "#/definitions/tafbTxnFeeDtl/recalculatedFlag",
+					"type": "string",
+					"title": "recalculatedFlag",
+					"description": "Fee recalculated indicator",
+					"maxLength": 1
+				},
+				"adjustmentAmt": {
+					"$id": "#/definitions/tafbTxnFeeDtl/adjustmentAmt",
+					"type": "number",
+					"title": "adjustmentAmt",
+					"description": "Adjustment amount"
+				},
+				"adjustmentCur": {
+					"$id": "#/definitions/tafbTxnFeeDtl/adjustmentCur",
+					"type": "string",
+					"title": "adjustmentCur",
+					"description": "Adjustment currency",
+					"maxLength": 20
+				},
+				"appamountTemp": {
+					"$id": "#/definitions/tafbTxnFeeDtl/appamountTemp",
+					"type": "string",
+					"title": "appamountTemp",
+					"description": "appamountTemp",
+					"maxLength": 24
+				},
+				"appamountCurTemp": {
+					"$id": "#/definitions/tafbTxnFeeDtl/appamountCurTemp",
+					"type": "string",
+					"title": "appamountCurTemp",
+					"description": "appamountCurTemp",
+					"maxLength": 20
+				},
+				"recalculatedFeeamt": {
+					"$id": "#/definitions/tafbTxnFeeDtl/recalculatedFeeamt",
+					"type": "number",
+					"title": "recalculatedFeeamt",
+					"description": "Recalculated fee amount"
+				},
+				"recalcCurcode": {
+					"$id": "#/definitions/tafbTxnFeeDtl/recalcCurcode",
+					"type": "string",
+					"title": "recalcCurcode",
+					"description": "Recalculated fee amount currency code",
+					"maxLength": 20
+				},
+				"childRecordPending": {
+					"$id": "#/definitions/tafbTxnFeeDtl/childRecordPending",
+					"type": "string",
+					"title": "childRecordPending",
+					"description": "childRecordPending",
+					"maxLength": 20
+				},
+				"approvedRecalcAmt": {
+					"$id": "#/definitions/tafbTxnFeeDtl/approvedRecalcAmt",
+					"type": "number",
+					"title": "approvedRecalcAmt",
+					"description": "Approved recalculated amount"
+				},
+				"approvedRecalcCurcode": {
+					"$id": "#/definitions/tafbTxnFeeDtl/approvedRecalcCurcode",
+					"type": "string",
+					"title": "approvedRecalcCurcode",
+					"description": "Approved recalculated currency code",
+					"maxLength": 20
+				},
+				"receiverId": {
+					"$id": "#/definitions/tafbTxnFeeDtl/receiverId",
+					"type": "string",
+					"title": "receiverId",
+					"description": "Receiver ID",
+					"maxLength": 48
+				},
+				"receiverName": {
+					"$id": "#/definitions/tafbTxnFeeDtl/receiverName",
+					"type": "string",
+					"title": "receiverName",
+					"description": "Receiver Name",
+					"maxLength": 100
+				},
+				"extBankName": {
+					"$id": "#/definitions/tafbTxnFeeDtl/extBankName",
+					"type": "string",
+					"title": "extBankName",
+					"description": "External bank name",
+					"maxLength": 48
+				},
+				"extBranchName": {
+					"$id": "#/definitions/tafbTxnFeeDtl/extBranchName",
+					"type": "string",
+					"title": "extBranchName",
+					"description": "External branch name",
+					"maxLength": 48
+				},
+				"extAccCcy": {
+					"$id": "#/definitions/tafbTxnFeeDtl/extAccCcy",
+					"type": "string",
+					"title": "extAccCcy",
+					"description": "External account currency",
+					"maxLength": 3
+				},
+				"extAccType": {
+					"$id": "#/definitions/tafbTxnFeeDtl/extAccType",
+					"type": "string",
+					"title": "extAccType",
+					"description": "External account type",
+					"maxLength": 56
+				},
+				"revenueFlag": {
+					"$id": "#/definitions/tafbTxnFeeDtl/revenueFlag",
+					"type": "string",
+					"title": "revenueFlag",
+					"description": "Revenue Flag",
+					"maxLength": 1
+				},
+				"costId": {
+					"$id": "#/definitions/tafbTxnFeeDtl/costId",
+					"type": "integer",
+					"title": "costId",
+					"description": "Cost ID"
+				},
+				"lobCode": {
+					"$id": "#/definitions/tafbTxnFeeDtl/lobCode",
+					"type": "string",
+					"title": "lobCode",
+					"description": "Line of business code",
+					"maxLength": 30
+				},
+				"billAccType": {
+					"$id": "#/definitions/tafbTxnFeeDtl/billAccType",
+					"type": "string",
+					"title": "billAccType",
+					"description": "Billing accout type",
+					"maxLength": 1
+				},
+				"feeExtRefNo": {
+					"$id": "#/definitions/tafbTxnFeeDtl/feeExtRefNo",
+					"type": "string",
+					"title": "feeExtRefNo",
+					"description": "Fee External Reference Number",
+					"maxLength": 50
+				},
+				"sourceSystemId": {
+					"$id": "#/definitions/tafbTxnFeeDtl/sourceSystemId",
+					"type": "string",
+					"title": "sourceSystemId",
+					"description": "Source System ID",
+					"maxLength": 50
+				},
+				"feeCalcDetails": {
+					"$id": "#/definitions/tafbTxnFeeDtl/feeCalcDetails",
+					"type": "string",
+					"title": "feeCalcDetails",
+					"description": "AFee calculation details",
+					"maxLength": 255
+				},
+				"valueDt": {
+					"$id": "#/definitions/tafbTxnFeeDtl/valueDt",
+					"type": "string",
+					"title": "valueDt",
+					"description": "Value Date",
+					"format": "date-time"
+				}
+			}
+		}
+	}
+}
