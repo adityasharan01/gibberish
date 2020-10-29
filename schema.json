@@ -4,7 +4,7 @@
 	"description": "Details about Transaction Fee Details",
 	"type": "object",
 	"required": [
-		"tafbTxnFeeDtl"dfbdsbsdb
+		"tafbTxnFeeDtl"dfbdsbsdb gibberish
 	],
 	"properties": {
 		"tafbTxnFeeDtl": {
